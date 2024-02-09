@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-gray-600 body-font bg-[#C2EFD4] pl-10">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-[#224F34] mb-4 md:mb-0">
+            <span class="ml-3 text-xl ">Rivo</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-[#224F34] justify-center">
+            <a class="mr-5 hover:text-gray-900">HOME</a>
+            <a class="mr-5 hover:text-gray-900">SHOPE</a>
+            <a class="mr-5 hover:text-gray-900">FEATURE</a>
+            <a class="mr-5 hover:text-gray-900">CONCAT</a>
+          </nav>
+          <img class="size-6 mr-5" src="image/Group 1.png" alt="back">
+          <button class="inline-flex items-center bg-gray-100 px-2 focus:outline-none hover:bg-gray-200 rounded text-[#224F34] mt-4 md:mt-0 border border-indigo-600">LOGING
+          </button>
+        </div>
+                                <!-- second Header -->
+
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#224F34]">Discover and 
+                    <br class="hidden lg:inline-block">Find Your Own 
+                    <br class="hidden lg:inline-block">Fashion!
+                    </h1>
+                    <p class="mb-8 leading-relaxed text-[#224F34]">Explore our curated collection of stylish
+                        <br class="hidden lg:inline-block"> clothing and accessories tailored to
+                        <br class="hidden lg:inline-block"> your unique taste.</p>
+                    <div class="flex justify-center">
+                        <button class="inline-flex text-white bg-[#224F34] border-0  px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                    </div>
+              </div>
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-green-500" style="border-radius: 150px 30px 150px 30px;">
+                <img class="object-cover object-center rounded  " alt="hero" src="image/first.png">
+              </div>
+            </div>
+        </section>
+    </header>
+                                    <!-- second part -->
+
+
+    <section class="mt-6">
+        <div class="flex flex-col text-center w-full  gap-3">
+            <h2 class="text-2xl text-[#224F34] tracking-widest  title-font mb-1">Best selling</h2>
+            <h1 class=" font-medium title-font text-sm text-[#224F34]">Get in on the trend with our curated selection of best-selling styles.</h1>
+        </div>
+        <div id="showProducts" class="grid grid-cols-3 gap-4"></div>
+        <button id="button" class="flex items-center justify-center bg-gray-100  py-1 px-3 focus:outline-none hover:bg-gray-200 rounded  md:mt-0 mx-auto text-[#224F34] border border-indigo-600" onclick="productsDiscrib()">See all
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </button>
+        <!-- image card -->
+        
+        <div id="surchbuton" class="grid grid-cols-3 gap-4"></div>
+        
+        <!-- card end -->
+    </section>
+    <section class="text-center mt-5">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-3xl text-[#224F34] tracking-widest  title-font mb-1 ">Our Products</h2>
+        <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-[#224F34] justify-center gap-4 mt-4">
+            <a class="mr-5 hover:text-gray-900">HOME</a>
+            <a class="mr-5 hover:text-gray-900">SHOPE</a>
+            <a class="mr-5 hover:text-gray-900">FEATURE</a>
+            <a class="mr-5 hover:text-gray-900">CONCAT</a>
+        </div>
+      </div>
+      <div id="colar" class="grid grid-cols-3 gap-4"></div>
+
+    </section>
+
+    
+    <!-- third part -->
+    <section class="text-gray-600 body-font bg-[#C2EFD4]">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img class="object-cover object-center rounded" alt="hero" src="image/second.png">
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#224F34]">Exclusive offer
+          </h1>
+          <p class="mb-8 leading-relaxed text-[#224F34]">Unlock the ultimate style upgrade with our exclusive offer Enjoy savings of up to 40% off on our latest New Arrivals</p>
+          <div class="flex justify-center gap-3 mb-4">
+            <button id="days" class="inline-flex text-[#224F34] bg-[#ffffff] border-0  px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg flex-col">o6
+              <span>days</span>
+            </button>
+
+            <button id="hours" class="inline-flex text-[#224F34] bg-[#ffffff] border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded text-lg flex-col">18
+              <span>hour</span>
+            </button>
+            <button id="minit" class="inline-flex text-[#224F34] bg-[#ffffff] border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded text-lg flex-col">48
+              <span>MINIT</span>
+              <button id="second" class="inline-flex text-[#224F34] bg-[#ffffff] border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded text-lg flex-col">00
+                <span>Second</span>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <button class="inline-flex text-white bg-[#224F34] border-0 py-2 px-4 focus:outline-none hover:bg-indigo-600 rounded text-lg">BUY NOW</button>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- third paart end -->
+
+    <!-- four part -->
+    <section class="mt-6">
+      <div class="flex flex-col text-center w-full mb-20 gap-3">
+          <h2 class="text-2xl text-[#224F34] tracking-widest  title-font mb-1">Designer Clothes For You</h2>
+          <h1 class=" font-medium title-font text-sm text-[#224F34]">Immerse yourself in the world of luxury fashion with our meticulously crafted designer clothes!</h1>
+      </div>
+      <!-- image card -->
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-[60%] object-cover object-center" src="image/g1.png" alt="blog">
+                <div class="p-6 text-center">
+                  
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Accessories</h1>
+                  <p class="leading-relaxed mb-3">Complete your ensemble with designer accessories such as handbags, scarves, belts, and hats.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-[60%] object-cover object-center" src="image/g2.png" alt="blog">
+                <div class="p-6 text-center">
+                  
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dresses</h1>
+                  <p class="leading-relaxed mb-3">Explore a stunning range of designer dresses, including evening gowns and chic day dresses.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-[55%] object-cover object-center" src="image/g3.png" alt="blog">
+                <div class="p-6 text-center">
+                  
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Outerwear</h1>
+                  <p class="leading-relaxed mb-3">Browse luxurious designer coats, jackets, and blazers to stay stylishly warm during colder seasons.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card end -->
+    </section>
+    <!-- four end -->
+                                     <!-- part five -->
+            <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                 <h1 class="sm:text-3xl text-2xl font-medium title-font text-[#224F34]">Feedback Corner</h1>
+              </div>
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                  <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                    <div class="grid items-center mb-3 flex-col justify-items-start">
+                      
+                        <img src="image/“.png" alt="">
+                      
+                      <h2 class="text-[#224F34] text-lg title-font font-medium">Emily Wilson</h2>
+                    </div>
+                    <div class="flex-grow">
+                      <p class="leading-relaxed text-base text-[#6F6F6F]">The customer experience was exceptional from start to finish. The website is user-friendly, the checkout process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3 bg-[#C2EFD4]">
+                  <div class="flex rounded-lg h-full p-8 flex-col">
+                    <div class="grid items-center mb-3 flex-col justify-items-start">
+
+                        <img src="image/“.png" alt="">
+                      <h2 class="text-[#224F34] text-lg title-font font-medium">Sarah Thompson</h2>
+                    </div>
+                    <div class="flex-grow">
+                      <p class="leading-relaxed text-base text-[#224F34]">I absolutely love the quality and style of the clothing I purchased from this website. customer service was outstanding, and I received my order quickly. Highly recommended!</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                    <div class="grid items-center mb-3 flex-col justify-items-start">
+                      
+                       
+                        <img src="image/“.png" alt="">
+                      <h2 class="text-[#224F34] text-lg title-font font-medium">Olivia Martinez</h2>
+                    </div>
+                    <div class="flex-grow">
+                      <p class="leading-relaxed text-base text-[#6F6F6F]">I had a great experience shopping on this website. The clothes I bought are fashionable and comfortable. Highly satisfied!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>                                
+                                          <!-- part five end -->
+                                          <!-- part six start -->
+        <footer class="text-[#ffffff] body-font bg-[#224F34]" >
+          <div class="container px-5 py-24 mx-auto w-full">
+            <div class="flex flex-wrap md:text-left text-center order-first">
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h1 class="title-font font-medium text-[#ffffff] text-lg tracking-widest text-sm mb-3">Rivo</h1>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-[#ffffff] hover:text-gray-800">Social Media</a>
+                  </li>
+                  <!-- link -->
+                  <div class="mt-5">
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                      <a class="text-[#ffffff]">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-3 text-[#ffffff]">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-3 text-[#ffffff]">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-3 text-[#ffffff]">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                      </a>
+                    </span>
+                </div>
+                  <!-- link end -->
+
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-[#ffffff] tracking-widest text-sm mb-3">SHOP</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-[#ffffff] hover:text-gray-800">Products</a>
+                  </li>
+                  <li>
+                    <a class="text-[#ffffff]hover:text-gray-800">Overview</a>
+                  </li>
+                  <li>
+                    <a class="text-[#ffffff] hover:text-gray-800">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="text-[#ffffff] hover:text-gray-800">Releases</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-[#ffffff] tracking-widest text-sm mb-3">Company</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-[#ffffff] hover:text-gray-800">About us</a>
+                  </li>
+                  <li>
+                    <a class="text-[#ffffff] hover:text-gray-800">Contact</a>
+                  </li>
+                  <li>
+                    <a class="text-[#ffffff] hover:text-gray-800">News</a>
+                  </li>
+                  <li>
+                    <a class="text-[#ffffff] hover:text-gray-800">Support</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-[#ffffff] tracking-widest text-sm mb-3">Stay up to date</h2>
+                <div class="grid grid-cols-2 gap-1 justify-center content-center lg:w-full ">
+                  <div class="relative w-64 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4">
+                    
+                    <input type="email" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-[#ffffff]  px-2 leading-8 transition-colors duration-200 ease-in-out" placeholder="Enter your email">
+                  </div>
+                  <div>
+                    <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-[#ffffff] bg-indigo-500 border-0 py-2 px-3 focus:outline-none hover:bg-indigo-600 rounded">SUBMIT</button>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div class="flex flex-row content-center justify-center gap-3  w-full text-center">
+                <span class="inline-block h-1 w-[80%] rounded bg-[#ffffff] mt-8 mb-6"></span>
+                <h3>Terms</h3>
+                <h3>Terms</h3>
+                <h3>Terms</h3>
+              </div>
+              
+            </div>
+          </div>
+          
+          
+        </footer>                                    
+                                          <!-- part six end -->
+
+
+    <script src="api.js"></script>
+
+</body>
+</html>
+
+
